@@ -3,20 +3,20 @@
 Plugin Name: Tag images
 Plugin URI: http://wordpress.org/extend/plugins/tag-images/
 Description: Allows you to have an image to represent a tag
-Version: 1.1
+Version: 1.2
 Author: Chris Northwood
 Author URI: http://www.pling.org.uk/
-
-Nouse revision: 1585
-
 */
 
 function get_tag_image($term, $show_if_no_image = true)
 {
     $im = get_option('tag-' . $term->term_id . '-image');
-    if ($im === FALSE && $show_if_no_image)
+    if ($im === FALSE)
     {
-        return '<a href="' . get_tag_link($term->term_id) . '">' . $term->name . '</a>';
+        if ($show_if_no_image)
+        {
+            return '<a href="' . get_tag_link($term->term_id) . '">' . $term->name . '</a>';
+        }
     }
     else
     {

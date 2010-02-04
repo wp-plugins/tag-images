@@ -3,7 +3,7 @@ Contributors: chrisnorthwood
 Tags: images, tag, admin, tags
 Requires at least: 2.7
 Tested up to: 2.9.1
-Stable tag: 1.1
+Stable tag: 1.2
 
 == Description ==
 
@@ -18,6 +18,10 @@ Install your plugin as per usual. However, on its own, it does nothing other tha
 To assign images, simply go to the "Tag Images" panel in your options and you will see all your tags listed, and any images for them. You can simply replace an image or upload one.
 
 == Changelog ==
+
+= 1.2 =
+
+* Make the feature added in 1.1 actually work
 
 = 1.1 =
 
